@@ -681,10 +681,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⚚ 🅰︎🅳︎🅳︎ 🅼︎🅴︎ 🆃︎🅾︎ 🆈︎🅾︎🆄︎🆁︎ 🅶︎🆁︎🅾︎🆄︎🅿︎ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 GᏒԾUᎮ 💠', url='https://t.me/crimebhavani4'),
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/+veUIdIW2CQ5mOGU5')
+            InlineKeyboardButton('🗨️ GᏒԾUᎮ 🗨️', url='https://t.me/crimebhavani4'),
+            InlineKeyboardButton('🔘 CHΛИИΞL 🔘', url='https://t.me/updatechannel_forcrime')
             ],[          
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ HΞLᎮ ⚙️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
             ],[
             InlineKeyboardButton('💠 SΞΛᏒCH HΞᏒΞ 💠', switch_inline_query_current_chat='')
@@ -712,7 +712,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="➡️➡️➡️"
         )
         await query.message.edit_text(
-            text="🔲🔘🔳🔘🔲"
+            text="𝕮𝖗𝖎𝖒𝖊-🅸︎🆃︎"
         )
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
