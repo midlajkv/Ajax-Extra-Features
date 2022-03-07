@@ -679,15 +679,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⚚ 🅰︎🅳︎🅳︎ 🅼︎🅴︎ 🆃︎🅾︎ 🆈︎🅾︎🆄︎🆁︎ 🅶︎🆁︎🅾︎🆄︎🅿︎ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ 𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🗨️ GᏒԾUᎮ 🗨️', url='https://t.me/crimebhavani4'),
-            InlineKeyboardButton('🔘 CHΛИИΞL 🔘', url='https://t.me/updatechannel_forcrime')
-            ],[          
-            InlineKeyboardButton('♻️ HΞLᎮ ⚙️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('🔘 𝖦𝗋𝗈𝗎𝗉 🔘', url='https://t.me/crimebhavani4'),
+            InlineKeyboardButton('♂️ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ♂️', url='https://t.me/updatechannel_forcrime')         
             ],[
-            InlineKeyboardButton('💠 SΞΛᏒCH HΞᏒΞ 💠', switch_inline_query_current_chat='')
+            InlineKeyboardButton('⚙️ 𝖧𝖾𝗅𝗉 ⚙️', callback_data='help'),
+            InlineKeyboardButton('♻️ 𝖠𝖻𝗈𝗎𝗍 ♻️', callback_data='about'),
+            InlineKeyboardButton('𝖦𝖺𝗆𝖾𝗌🚜', callback_data='fun')
+            ],[
+            InlineKeyboardButton('🗨️ 𝖲𝖾𝖺𝗋𝖼𝗁 𝖨𝖬𝖡𝖣 🗨️', switch_inline_query_current_chat='')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -701,16 +702,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="▣▣▢"
         )
         await query.message.edit_text(
-            text="▣▣▣"
+            text="▣▣▣▢▢▢"
         )
         await query.message.edit_text(
-            text="➡️"
+            text="▣▣▣▣▢▢"
         )
         await query.message.edit_text(
-            text="➡️➡️"
+            text="▣▣▣▣▣▢"
         )
         await query.message.edit_text(
-            text="➡️➡️➡️"
+            text="▣▣▣▣▣▣"
         )
         await query.message.edit_text(
             text="𝕮𝖗𝖎𝖒𝖊-🅸︎🆃︎"
@@ -803,20 +804,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="▣▣▢"
         )
         await query.message.edit_text(
-            text="▣▣▣"
+            text="▣▣▣▢▢▢"
         )
         await query.message.edit_text(
-            text="➡️"
+            text="▣▣▣▣▢▢"
         )
         await query.message.edit_text(
-            text="➡️➡️"
+            text="▣▣▣▣▣▢"
         )
         await query.message.edit_text(
-            text="➡️➡️➡️"
+            text="▣▣▣▣▣▣"
         )
         await query.message.edit_text(
             text="𝕮𝖗𝖎𝖒𝖊-🅸︎🆃︎"
-        )
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
