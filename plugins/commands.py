@@ -42,16 +42,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ 𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔘 GᏒԾUᎮ 🔘', url='https://t.me/crimebhavani4'),
-            InlineKeyboardButton('♂️ CHΛИИΞL ♂️', url='https://t.me/updatechannel_forcrime')         
+            InlineKeyboardButton('🔘 𝖦𝗋𝗈𝗎𝗉 🔘', url='https://t.me/crimebhavani4'),
+            InlineKeyboardButton('♂️ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ♂️', url='https://t.me/updatechannel_forcrime')         
             ],[
-            InlineKeyboardButton('⚙️ HΞLᎮ ⚙️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
-            InlineKeyboardButton('games🚜', callback_data='')
+            InlineKeyboardButton('⚙️ 𝖧𝖾𝗅𝗉 ⚙️', callback_data='help'),
+            InlineKeyboardButton('♻️ 𝖠𝖻𝗈𝗎𝗍 ♻️', callback_data='about')
+            InlineKeyboardButton('𝖦𝖺𝗆𝖾𝗌🚜', callback_data='fun')
             ],[
-            InlineKeyboardButton('🗨️ SΞΛᏒCH HΞᏒΞ 🗨️', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🗨️ 𝖲𝖾𝖺𝗋𝖼𝗁 𝖨𝖬𝖡𝖣 🗨️', switch_inline_query_current_chat='')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -92,13 +92,14 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ 𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔘 GᏒԾUᎮ 🔘', url='https://t.me/crimebhavani4'),
-            InlineKeyboardButton('♂️ CHΛИИΞL ♂️', url='https://t.me/updatechannel_forcrime')         
+            InlineKeyboardButton('🔘 𝖦𝗋𝗈𝗎𝗉 🔘', url='https://t.me/crimebhavani4'),
+            InlineKeyboardButton('♂️ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ♂️', url='https://t.me/updatechannel_forcrime')         
             ],[
-            InlineKeyboardButton('⚙️ HΞLᎮ ⚙️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('⚙️ 𝖧𝖾𝗅𝗉  ⚙️', callback_data='help'),
+            InlineKeyboardButton('♻️ 𝖠𝖻𝗈𝗎𝗍 ♻️', callback_data='about')
+            InlineKeyboardButton('𝖦𝖺𝗆𝖾𝗌🚜', callback_data='fun')
             ],[
             InlineKeyboardButton('🗨️ SΞΛᏒCH HΞᏒΞ 🗨️', switch_inline_query_current_chat='')
         ]]
