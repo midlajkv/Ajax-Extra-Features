@@ -48,7 +48,7 @@ async def start(client, message):
             InlineKeyboardButton('♂️ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ♂️', url='https://t.me/updatechannel_forcrime')         
             ],[
             InlineKeyboardButton('⚙️ 𝖧𝖾𝗅𝗉 ⚙️', callback_data='help'),
-            InlineKeyboardButton('♻️ 𝖠𝖻𝗈𝗎𝗍 ♻️', callback_data='about')
+            InlineKeyboardButton('♻️ 𝖠𝖻𝗈𝗎𝗍 ♻️', callback_data='about'),
             InlineKeyboardButton('𝖦𝖺𝗆𝖾𝗌🚜', callback_data='fun')
             ],[
             InlineKeyboardButton('🗨️ 𝖲𝖾𝖺𝗋𝖼𝗁 𝖨𝖬𝖡𝖣 🗨️', switch_inline_query_current_chat='')
@@ -98,7 +98,7 @@ async def start(client, message):
             InlineKeyboardButton('♂️ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ♂️', url='https://t.me/updatechannel_forcrime')         
             ],[
             InlineKeyboardButton('⚙️ 𝖧𝖾𝗅𝗉  ⚙️', callback_data='help'),
-            InlineKeyboardButton('♻️ 𝖠𝖻𝗈𝗎𝗍 ♻️', callback_data='about')
+            InlineKeyboardButton('♻️ 𝖠𝖻𝗈𝗎𝗍 ♻️', callback_data='about'),
             InlineKeyboardButton('𝖦𝖺𝗆𝖾𝗌🚜', callback_data='fun')
             ],[
             InlineKeyboardButton('🗨️ SΞΛᏒCH HΞᏒΞ 🗨️', switch_inline_query_current_chat='')
