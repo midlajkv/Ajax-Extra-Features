@@ -49,6 +49,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('⚙️ HΞLᎮ ⚙️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('games🚜', callback_data='')
             ],[
             InlineKeyboardButton('🗨️ SΞΛᏒCH HΞᏒΞ 🗨️', switch_inline_query_current_chat='')
         ]]
