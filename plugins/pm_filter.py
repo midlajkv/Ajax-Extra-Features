@@ -821,8 +821,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
-            parse_mode='html',
-            show_alert=True
+            parse_mode='html'
+       
         )
     elif query.data == "hellp":
         buttons = [[
@@ -932,7 +932,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode='html',
+            show_alert=True
         )
     elif query.data == "restric":
         buttons = [[
