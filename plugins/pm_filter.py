@@ -929,7 +929,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text="𝕮𝖗𝖎𝖒𝖊-🅸︎🆃︎"
         )
-        await query.message.edit_text(
+        await msg.answer(
             text=script.ABOUT_TXT.format(temp.B_NAME),
             show_alert=True,
             reply_markup=reply_markup,
