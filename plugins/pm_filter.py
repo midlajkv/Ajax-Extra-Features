@@ -905,33 +905,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="▢▢▢"
-        )
-        await query.message.edit_text(
-            text="▣▢▢"
-        )
-        await query.message.edit_text(
-            text="▣▣▢"
-        )
-        await query.message.edit_text(
-            text="▣▣▣"
-        )
-        await query.message.edit_text(
-            text="➡️"
-        )
-        await query.message.edit_text(
-            text="➡️➡️"
-        )
-        await query.message.edit_text(
-            text="➡️➡️➡️"
-        )
-        await query.message.edit_text(
-            text="𝕮𝖗𝖎𝖒𝖊-🅸︎🆃︎"
-        )
+
         await message.answer(
-            text=script.ABOUT_TXT.format(temp.B_NAME),
-            show_alert=True,
+            text=script.ABOUT_TXT.format(temp.B_NAME), show_alert=True
+       
             reply_markup=reply_markup,
             parse_mode='html'
             
