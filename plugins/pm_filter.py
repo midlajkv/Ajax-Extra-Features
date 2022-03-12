@@ -906,7 +906,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
 
-        await message.answer(
+        await query.answer(
             text=script.ABOUT_TXT.format(temp.B_NAME), show_alert=True,
        
             reply_markup=reply_markup,
