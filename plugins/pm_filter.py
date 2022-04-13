@@ -75,6 +75,7 @@ from image.edit_5 import (  # pylint:disable=import-error
 BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE = {}
+FILE_CHANNLE_ID = int(-1001439371474)
 
 @Client.on_message(filters.command('autofilter'))
 async def fil_mod(client, message): 
@@ -467,13 +468,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
                 return
             else:
-                await client.send_cached_media(
-                    chat_id=query.from_user.id,
+                file_msg = await client.send_cached_media(
+                    chat_id=FILE_CHANNLE_ID,
                     file_id=file_id,
                     caption=f_caption,
-                    protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('Check PM, I have sent files in pm', show_alert=True)
+                message = query.message.reply_to_message
+                await message.reply_text(f"Your File {file_msg.link}")
+
         except UserIsBlocked:
             await query.answer('You Are Blocked to use me', show_alert=True)
         except PeerIdInvalid:
