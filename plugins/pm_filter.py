@@ -473,7 +473,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                msg1 = await query.message.reply(
+                 msg1 = await query.message.reply(
                 f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n📫 Your File Is Ready\n\n'           
                 f'<code>📂{title}</code>\n\n'              
                 '<b><u>👉ഈ മൂവി ഫയൽ ലഭിക്കണമെങ്കിൽ താഴെ (📢Join Channel📢) ലിങ്കിൽ ഉള്ള ചാനലിൽ  ചെയ്യണം\n👉ചാനലിൽ Join ആയ ശേഷം ഡൗൺലോഡ് ബട്ടൺ അമർത്തുക \n\n👉In Order To Get The Movie Requested..You Must Have To Join Our Channel First..\n👉 After That, Click  🔄 Download 🔄  Button. TO Get Movie File\n\n</u></b>',
@@ -482,7 +482,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('📢 Join Channel 📢', url ="https://t.me/+VQZTK6EdBAo5MjU1")
+                            InlineKeyboardButton('📢 Join Channel 📢', url ="https://t.me/updatechannel_forcrime")
                         ],
                         [
                             InlineKeyboardButton('🔄 Download 🔄 ', url = msg.link)
@@ -531,6 +531,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             caption=f_caption,
             protect_content=True if ident == 'checksubp' else False
         )
+    elif query.data == "pages":
+        await query.answer()
+
+    
     elif query.data == "removebg":
         await query.message.edit_text(
             "**Select required mode**ㅤㅤㅤㅤ",
