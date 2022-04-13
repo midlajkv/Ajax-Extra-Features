@@ -745,15 +745,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ 𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/MWUpdatez'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/OpusTechz')
-            ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('🔘 𝖦𝗋𝗈𝗎𝗉 🔘', url='https://t.me/crimebhavani4'),
+            InlineKeyboardButton('♂️ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ♂️', url='https://t.me/updatechannel_forcrime')         
             ],[
-            InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA')
+            InlineKeyboardButton('⚙️ 𝖧𝖾𝗅𝗉  ⚙️', callback_data='help'),
+            InlineKeyboardButton('♻️ 𝖠𝖻𝗈𝗎𝗍 ♻️', callback_data='about'),
+            InlineKeyboardButton('𝖦𝖺𝗆𝖾𝗌🚜', callback_data='fun')
+            ],[
+            InlineKeyboardButton('🗨️ SΞΛᏒCH HΞᏒΞ 🗨️', switch_inline_query_current_chat='')
         ]]       
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
