@@ -29,6 +29,7 @@ aiofiles
 psutil
 wheel
 humanize
+heroku3
 ytthumb
 pypdf2
 PyPDF2
